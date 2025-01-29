@@ -54,7 +54,7 @@ const TaskForm: React.FC<TaskFormProps> = ({
       </div>
       <div>
         <label className="font-bold text-primary">Color</label>
-        <div className="mt-3 flex gap-4">
+        <div className="mt-3 flex flex-wrap gap-4">
           {(Object.keys(colors) as (keyof typeof colors)[]).map((color) => (
             <label key={color} className="relative flex items-center">
               <input
@@ -66,7 +66,7 @@ const TaskForm: React.FC<TaskFormProps> = ({
                 className="peer absolute h-0 w-0 opacity-0"
               />
               <div
-                className={`h-8 w-8 cursor-pointer rounded-full border-2 border-transparent transition-all duration-200 peer-checked:scale-110 peer-checked:border-white`}
+                className={`h-8 w-8 cursor-pointer rounded-full border-2 border-transparent transition-all duration-200 peer-checked:scale-110 peer-checked:border-white peer-focus:border-white`}
                 style={{ backgroundColor: colors[color] }}
               ></div>
             </label>
