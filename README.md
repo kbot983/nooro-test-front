@@ -28,6 +28,10 @@ npm i
 npm run dev
 ```
 
+### 4. Go to dev site on
+
+`https://localhost:300`
+
 ## Components
 
 `TaskList` - Displays all tasks
